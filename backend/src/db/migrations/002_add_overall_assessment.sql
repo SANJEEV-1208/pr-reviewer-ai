@@ -1,0 +1,1 @@
+ALTER TABLE reviews ADD COLUMN IF NOT EXISTS overall_assessment VARCHAR(50);
