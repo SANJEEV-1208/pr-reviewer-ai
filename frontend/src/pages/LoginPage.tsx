@@ -4,7 +4,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { InstallButton } from '../components/InstallButton';
 
 export function LoginPage() {
-  const { isAuthenticated, login } = useAuth();
+  const { isAuthenticated } = useAuth();
   const navigate = useNavigate();
   const [params] = useSearchParams();
   const error = params.get('error');
